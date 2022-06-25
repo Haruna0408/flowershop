@@ -1,0 +1,19 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+/* garelly
+----------------------------------------------------------------- */
+.p-garelly {
+    margin-bottom: m.rem(30);
+
+    &__item {
+        // width: 10.5%;
+        margin: 0 m.rem(3);
+
+        @include m.mq-max(v.$breakpoint-xs) {
+            margin: 0 m.vw(10);
+        }
+
+    }
+}

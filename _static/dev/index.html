@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ページの内容を表す文章" />
+    <!-- 公開時削除↓↓ -->
+    <meta name="robots" content="noindex,nofollow" />
+    <!-- 公開時削除↑↑ -->
+
+    <!-- title -->
+    <title>インデックス | テンプレート</title>
+
+    <!-- font -->
+    <!-- /notosans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+    <!-- /opensans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <!-- css --->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--- favicon -->
+    <link rel="icon" href="/assets/img/common/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/common/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="/assets/img/common/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/img/common/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/img/common/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/img/common/android-chrome-256x256.png" sizes="256x256">
+    <link rel="icon" type="image/png" href="/assets/img/common/android-chrome-512x512.png" sizes="512x512">
+    <!-- /スマホ用アイコン画像 -->
+    <link rel="apple-touch-icon-precomposed" href="画像のURL" />
+
+    <!-- OGP -->
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"></head><!-- TOPページの場合-->
+    <meta property="og:url" content="ページのURL//絶対パス" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:type" content="ページのタイプ">
+    <meta property="og:description" content="記事の抜粋" />
+    <meta property="og:image" content="画像のURL//絶対パス" />
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="fb:app_id" content="appIDを入力" />
+    <!-- twitter card -->
+    <meta name="twitter:card" content="カード種類" />
+    <meta name="twitter:site" content="@Twitterユーザー名" />
+
+    <!-- Google Analytics Tag head内用-->
+</head>
+
+<body>
+    <!-- Google Analytics Tag -body直下用 -->
+
+    <!--/ Loading -->
+    <div id="loading">
+        <div class="p-loading__item"></div>
+        <p class="p-loading__text">Loading...</p>
+    </div>
+
+    <div class="l-wrapper">
+        <!--/ Header -->
+        <header id="header" class="l-header js-header">
+            <div class="l-header__inner">
+                <p class="p-logo">
+                    <a href="/" class="p-logo__link">XXX</a>
+                </p>
+                <div class="p-nav__area js-drower">
+                    <nav class="p-nav__content">
+                        <ul class="p-nav__list">
+                            <li class="p-nav__item">
+                                <a href="#concept" class="p-nav__link js-open__trigger js-close_trigger"">Concept</a>
+                            </li>
+                            <li class="p-nav__item">
+                                <a href="#works" class="p-nav__link js-open__trigger js-close_trigger"">Works</a>
+                            </li>
+                            <li class="p-nav__item">
+                                <a href="#news" class="p-nav__link js-open__trigger js-close_trigger"">News</a>
+                            </li>
+                            <li class="p-nav__item">
+                                <a href="#access" class="p-nav__link js-open__trigger js-close_trigger"">Access</a>
+                            </li>
+                            <li class="p-nav__item">
+                                <a href="#contact" class="p-nav__link js-open__trigger js-close_trigger"">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- <div class="p-nav__button _sp js-close_trigger">
+                            <p class="c-button__green">
+                                <span class="c-button__radius c-button__close">メニューを閉じる</span>
+                            </p>
+                        </div> -->
+                    </nav>
+
+                    <ul class="p-sns__list">
+                        <li class="p-sns__item c-icon__instagram">
+                            <a href="http://twitter.com/share?text=&amp;url=http://" rel="nofollow" target="_blank">
+                                <img loading="lazy" src="/assets/images/common/icon-instagram.svg" alt="Instagramアイコン">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- .p-nav__area /-->
+                <button type="button" class="p-hamburger p-hamburger__button" aria-expanded="false">
+                    <span class="p-hamburger__line one"></span>
+                    <span class="p-hamburger__line two"></span>
+                    <span class="p-hamburger__line three"></span>
+                    <span class="p-hamburger__text"></span>
+                </button><!-- p-hambergermenu /-->
+            </div>
+            <!--.l-header__content /-->
+        </header><!--.l-header /-->
+        <!--/ Header -->
+
+        <main class="l-main">
+
+
+            <div class="p-mainvisual">
+                <div class="p-mainvisual__area">
+                    <div class="p-mainvisual__wrap">
+                        <picture>
+                            <source srcset="./assets/images/top/mv.jpg">
+                            <img loading="lazy" src="./assets/images/top/mv.jpg" alt="生活に彩りをお届けします。">
+                        </picture>
+                        <div class="p-mainvisual__text">
+                            <p class="p-mainvisual__text__one">XXXXX</p>
+                            <p class="p-mainvisual__text__two">XXXXXXXXXX</p>
+                            <p class="p-mainvisual__text__three">XXXXXXXXXXXXXX</p>
+                        </div>
+                    </div>
+                </div><!-- mv -->
+                <div class="c-scrollDown">
+                    <span class="c-scrollDown__text">Scroll</span>
+                </div><!-- scrollDown /-->
+            </div>
+            <!--.l-mainvisual /-->
+
+            <section id="concept" class="l-section concept">
+                <div class="l-inner">
+
+                    <div class="p-box concept__box">
+                        <div class="p-box__left">
+                            <h2 class="c-heading">
+                                <span class="c-heading__main">Concept</span>
+                                <span class="c-heading__sub">ご提供するお花について</span>
+                            </h2>
+                            <p>
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            </p>
+                        </div>
+
+                        <div class="p-box__right">
+                            <picture>
+                                <source srcset="./assets/images/top/obj.jpg">
+                                <img loading="lazy" src="./assets/images/top/obj.jpg" alt="店内の様子">
+                            </picture>
+                        </div>
+                    </div><!--p-box/-->
+
+                </div><!--inner/-->
+            </section>
+            <!--.concept /-->
+
+            <section id="works" class="l-section works">
+                <div class="l-inner">
+
+                    <h2 class="c-heading works__heading">
+                        <span class="c-heading__main">Works</span>
+                        <span class="c-heading__sub">私たちの取り組みについて</span>
+                    </h2>
+
+                    <ul class="p-card__list works__list">
+
+                        <li class="p-card__item works__item">
+                            <div class="p-card__item__in">
+                                <h3 class="c-title p-card__title">GIFT</h3>
+                                <div class="p-card__body">
+                                    <p class="c-lead p-card__lead">
+                                        母の日や父の日などお世話になっている方々へのプレゼントにも最適なお花を、季節ごとに用意しております。
+                                    </p>
+                                </div>
+                                <figure class="p-card__img">
+                                    <img loading="lazy" src="./assets/images/top/img-gift.svg" alt="大切な人へプレゼントするイメージ" />
+                                </figure>
+                            </div>
+                        </li><!-- works01 -->
+
+                        <li class="p-card__item works__item">
+                            <div class="p-card__item__in">
+                                <h3 class="c-title p-card__title">EVENT</h3>
+                                <div class="p-card__body">
+                                    <p class="c-lead p-card__lead">
+                                        冠婚葬祭用のお花をご用意しています。行事に合わせておご提案いたしますので、お気軽にご相談ください。
+                                    </p>
+                                </div>
+                                <figure class="p-card__img">
+                                    <img loading="lazy" src="./assets/images/top/img-event.svg" alt="冠婚葬祭の行事に選ぶイメージ" />
+                                </figure>
+                            </div>
+                        </li><!-- works02 -->
+
+                        <li class="p-card__item works__item">
+                            <div class="p-card__item__in">
+                                <h3 class="c-title p-card__title">MY SELF</h3>
+                                <div class="p-card__body">
+                                    <p class="c-lead p-card__lead">
+                                        ご家庭で飾るお花としてもぜひお選びください。インスタグラムからもご注文可能です。
+                                    </p>
+                                </div>
+                                <figure class="p-card__img">
+                                    <img loading="lazy" src="./assets/images/top/img-self.svg" alt="自分自身へのプレゼントイメージ" />
+                                </figure>
+                            </div>
+                        </li><!-- works03 -->
+
+                    </ul>
+
+                </div>
+            </section>
+            <!--.works /-->
+
+            <div class="p-garelly js-garellySlider">
+                <div class="p-garelly__item">
+                    <img loading="lazy" src="./assets/images/top/img-gl-1.jpg" alt="お花">
+                </div>
+
+                <div class="p-garelly__item">
+                    <img loading="lazy" src="./assets/images/top/img-gl-2.jpg" alt="お花">
+                </div>
+
+                <div class="p-garelly__item">
+                    <img loading="lazy" src="./assets/images/top/img-gl-3.jpg" alt="お花">
+                </div>
+
+                <div class="p-garelly__item">
+                    <img loading="lazy" src="./assets/images/top/img-gl-4.jpg" alt="お花">
+                </div>
+
+                <div class="p-garelly__item">
+                    <img loading="lazy" src="./assets/images/top/img-gl-5.jpg" alt="お花">
+                </div>
+
+                <div class="p-garelly__item">
+                    <img loading="lazy" src="./assets/images/top/img-gl-6.jpg" alt="お花">
+                </div>
+
+            </div>
+            <!--InstagramあればFeed取得-->
+
+            <div class="cv">
+                <div class="l-inner">
+                    <p class="c-button__wrap">
+                        <a href="https:" target="_blank" class="c-button__radius--black">
+                            インスタグラムを見る
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+
+            <section id="news" class="l-section news u-bg__color--blue">
+                <div class="l-inner">
+                    <div class="p-box">
+                        <div class="p-box__left">
+                            <h2 class="c-heading">
+                                <span class="c-heading__main">News</span>
+                                <span class="c-heading__sub">お知らせ</span>
+                            </h2>
+                        </div>
+                        <div class="p-box__right">
+                            <ul class="c-rss__list p-news__list">
+                                <li class="c-rss__item p-news__item">
+                                    <a href="#" class="c-rss__link p-news__link">
+                                        <dl class="c-rss__body p-news__body">
+                                            <dt class="c-rss__day p-news__day">2022.05.XX </dt>
+                                            <dd class="c-rss__lead p-news__lead">新花入荷しました。</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+        
+                                <li class="c-rss__item p-news__item">
+                                    <a href="#" class="c-rss__link p-news__link">
+                                        <dl class="c-rss__body p-news__body">
+                                            <dt class="c-rss__day p-news__day">2022.05.XX </dt>
+                                            <dd class="c-rss__lead p-news__lead">タイトルが入りますタイトルが入りますタイトルが入ります</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div><!--p-box/-->
+                </div>
+            </section>
+            <!--.news /-->
+
+            <section id="access" class="l-section access">
+                <div class="l-inner">
+                    <h2 class="c-heading">
+                        <span class="c-heading__main">Access</span>
+                        <span class="c-heading__sub">店舗案内</span>
+                    </h2>
+                    <h2 class="c-title"></h2>
+                    <div class="p-map__wrap">
+                        <div class="p-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.6212036844756!2d135.49873701744383!3d34.673831000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e710c66a9f1d%3A0x3dbc1d54599d7b4b!2z5b-D5paO5qmLUEFSQ08!5e0!3m2!1sja!2sjp!4v1655811194666!5m2!1sja!2sjp" width="860" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <dl class="p-map__list">
+                        <div class="p-map__item">
+                            <dt class="p-map__title">
+                                <span><img loading="lazy" src="/assets/images/common/icon-address.svg" alt="住所アイコン"></span>住所
+                            </dt>
+                            <dd class="p-map__data">
+                                〒550-xxxx 大阪府大阪市xxx区xxxxxxxxx
+                                <span><a href="" target="_blank" rel="noopener noreferrer">マップを拡大してみる</a></span>
+                            </dd>
+                        </div>
+
+                        <div class="p-map__item">
+                            <dt class="p-map__title">
+                                <span><img loading="lazy" src="/assets/images/common/icon-trafic.svg" alt="交通機関アイコン"></span>交通機関
+                            </dt>
+                            <dd class="p-map__data">
+                                大阪メトロxxx線xxx駅から徒歩xx分 / xxx駅から徒歩xx分
+                            </dd>
+                        </div>
+
+                        <div class="p-map__item">
+                            <dt class="p-map__title">
+                                <span><img loading="lazy" src="/assets/images/common/icon-time.svg" alt="時間アイコン"></span>営業時間
+                            </dt>
+                            <dd class="p-map__data">
+                                9:00 - 18:00 (不定休)
+                            </dd>
+                        </div>
+
+                    </dl>
+                </div>
+            </section>
+            <!--.access /-->
+
+            <section id="contact" class="l-section contact">
+                <div class="l-inner">
+                    <h2 class="c-heading">
+                        <span class="c-heading__main">Contact</span>
+                        <span class="c-heading__sub">お問い合わせ</span>
+                    </h2>
+                    <p>
+                        メール、お電話、インスタグラムのダイレクトメッセージから<br class="u-display--block-pc">お気軽にお問い合わせ下さい。
+                    </p>
+
+                    <ul class="p-contact__list">
+                        <li class="p-contact__item">
+                            <a href="" class="c-button__radius--white">お電話でお問い合わせ</a>
+                        </li>
+                        <li class="p-contact__item">
+                            <a href="" class="c-button__radius--white">メールでお問い合わせ</a>
+                        </li>
+                        <li class="p-contact__item">
+                            <a href="" class="c-button__radius--white" target="_blank">インスタグラム DMへ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--.contact /-->
+
+
+        </main>
+        <!--.l-main /-->
+
+        <!--/ Footer -->
+        <footer class="l-footer">
+            <div class="l-inner">
+                <div class="l-footer__top">
+                    <p class="l-footer__logo"><a href="./">XXXX</a></p>
+                    <div class="l-footer__info">
+                        <p>〒550-XXXX&nbsp;大阪府大阪市xxx区xxxxxxxxx </p>
+                        <p>TEL&nbsp;&nbsp;06-XXX-XXXX</p>
+                        <p>MAIL&nbsp;&nbsp;XXXX@XXXXX.com</p>
+                    </div>
+
+                </div>
+                <div class="l-footer__bottom">
+                    <ul class="p-sns__list">
+                        <li class="p-sns__item c-icon__instagram">
+                            <a href="http://twitter.com/share?text=&amp;url=http://" rel="nofollow" target="_blank">
+                                <img loading="lazy" src="/assets/images/common/icon-instagram-white.svg" alt="Tweeter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="p-copyright">
+                <span class="p-copyright__text">Copyright &copy;&nbsp;2022&nbsp;XXX Co,.LTD. Allright Reserved.</span>
+            </p>
+            <!--.p-copright /-->
+
+            <!--<ul class="p-floating__list">
+                <li class="p-floating__item">
+                    <a href="#" class="c-button__base c-icon__contact p-floating__button"></a>
+                </li>
+            </ul>--><!-- .p-floating /-->
+            <!--<div class="p-pagetop">
+                <a href="#" class="p-pagetop__link">
+                    <img loading="lazy" src="/assets/img/common/icon_pagetop.png" alt="ページトップへ戻る">
+                </a>
+            </div>--><!-- .p-pagetop /-->
+        </footer>
+        <!-- Footer /-->
+
+
+
+    </div>
+    <!--.l-wrapper /-->
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- /全体-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/common.js"></script><!-- /全体-->
+    <script src="./assets/js/animation.js"></script><!-- /アニメーション用-->
+    <script src="./assets/js/slider.js"></script><!-- /アニメーション用-->
+
+
+</body>
+</html>

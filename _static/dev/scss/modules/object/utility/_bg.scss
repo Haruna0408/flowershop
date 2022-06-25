@@ -1,0 +1,100 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+/* back ground color
+----------------------------------------------------------------- */
+.u-bg__color {
+  &--theme {
+    background: v.$colorTheme;
+  }
+  &--sub {
+    background: v.$colorSub;
+  }
+  &--gray {
+    background-color: v.$colorBgGray;
+    &-dark {
+      background-color: v.$colorBgGrayDark;
+    }
+    &-light {
+      background-color: v.$colorBgGrayLight;
+    }
+  }
+
+  &--blue {
+    background-color: v.$colorBgBlueLight;
+  }
+}
+
+
+/* back ground parallax
+----------------------------------------------------------------- */
+.u-bg__parallax {
+    &__child {
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      &::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+      }
+      video {
+          width: 100vw;
+          object-fit: cover;
+      }
+    }
+    &__tpt {
+        // background: url(../images/bg_parallax_tpr@2x.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+  @include m.mq-max(v.$breakpoint-xs) {
+    &__child {
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+        video {
+            width: auto;
+        }
+    }
+  }
+
+}
+
+
+/* background clip
+----------------------------------------------------------------- */
+.u-bg__clip {
+  //画像
+  //background-image: url("../images/img-clippath.jpg");
+  //background-position: bottom;
+  //background-clip: text;
+  //-webkit-background-clip: text;
+  //color: rgba(255, 255, 255, 0);//transparents
+
+  //グラデーション
+  background-image: linear-gradient(to right, #d83819, #E2CC28, #57DB51);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(255, 255, 255, 0);//transparent
+
+  &__text {
+
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+//参考:https://ics.media/entry/210701/

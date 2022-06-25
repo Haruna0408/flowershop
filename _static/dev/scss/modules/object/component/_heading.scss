@@ -1,0 +1,40 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+// /* heading
+// ----------------------------------------------------------------- */
+.c-heading {
+    margin-bottom: m.rem(40);
+
+    &__main {
+        font-size: 4.8rem;
+        letter-spacing: 0.1em;
+        line-height: 1.7;
+        font-weight: 500;
+        @include m.mincho;
+        display: block;
+    }
+
+    &__sub {
+        font-size: 2rem;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+        line-height: 1.7;
+        @include m.mincho;
+        display: block;
+    }
+
+    @include m.mq-max(v.$breakpoint-xs) {
+
+        margin-bottom: m.vw(24);
+
+        &__main {
+            @include m.fz_vw(24);
+        }
+
+        &__sub {
+            @include m.fz_vw(14);
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+/* map
+----------------------------------------------------------------- */
+.p-map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+
+    iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__wrap {
+        margin: auto;
+        text-align: center;
+    }
+
+
+    &__list {
+
+        width: 80%;
+        margin: m.rem(30) auto;
+    }
+
+    &__item {
+        @include m.flexWrap;
+        align-items: center;
+
+        &:not(:last-of-type) {
+            margin-bottom: m.rem(15);
+        }
+    }
+
+    &__title {
+        width: 20%;
+        @include m.flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        line-height: 1.875;
+
+        span {
+            margin-right: m.rem(10);
+        }
+
+    }
+
+    &__data {
+        @include m.flex;
+        align-items: center;
+        margin-left: m.rem(16);
+        letter-spacing: 0.1em;
+        line-height: 1.875;
+
+        a {
+            position: relative;
+            margin-left: m.rem(10);
+            text-decoration: underline;
+            font-weight: 700;
+
+            &::after {
+                @include m.before;
+                width: m.rem(16);
+                height: m.rem(16);
+                left: auto;
+                right: m.rem(-14);
+                top: 50%;
+                transform: translateY(-50%);
+                background: url(../images/common/icon-link-tab-black.svg) center center / 100% no-repeat;
+            }
+        }
+
+    }
+
+    @include m.mq-max(v.$breakpoint-xs) {
+
+        &__list {
+            width: 100%;
+            margin: m.vw(20) auto 0;
+        }
+
+        &__item {
+            &:not(:last-of-type) {
+                margin-bottom: m.vw(20);
+            }
+        }
+
+        &__title {
+            width: 100%;
+            @include m.fz_vw(14);
+            margin-bottom: m.vw(5);
+
+            span {
+                margin-right: m.vw(10);
+            }
+
+        }
+
+        &__data {
+            margin-left: 0;
+            @include m.fz_vw(14);
+            flex-wrap: wrap;
+
+            a {
+                margin-left: 0;
+
+                &::after {
+                    width: m.vw(16);
+                    height: m.vw(16);
+                }
+            }
+
+        }
+    }
+}

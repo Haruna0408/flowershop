@@ -1,0 +1,51 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+
+/* logo
+-------------------------------------------*/
+.p-logo {
+    width: 100%;
+    max-width: 180px;
+
+    // img {
+    //     max-width: 180px;
+    // }
+
+    &__link {
+        font-size:  2.2rem;
+        letter-spacing: 0.1em;
+        line-height: 1.6;
+        @include m.mincho;
+    }
+
+    // &__list {
+    //     @include m.flex;
+    // }
+
+    &__item {
+        margin-right: 20px;
+    }
+
+    @include m.mq-max(v.$breakpoint-xs) {
+
+        // img {
+        //     max-width: 180px;
+        // }
+    
+        &__link {
+            font-size:  m.vw(20);
+        }
+    
+        // &__list {
+        //     @include m.flex;
+        // }
+    
+        &__item {
+            margin-right: 20px;
+        }
+    }
+
+
+}

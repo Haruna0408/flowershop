@@ -1,0 +1,94 @@
+@charset "utf-8";
+@use '../foundation/vars' as v;
+@use '../foundation/mixin' as m;
+
+/* footer
+----------------------------------------------------------------- */
+.l-footer {
+  background-color: v.$colorBase;
+  color: v.$colorTheme;
+
+  &__top {
+    @include m.flexWrap;
+    justify-content: center;
+    padding: m.rem(48) 0;
+  }
+
+  &__bottom {
+    padding: 0 0 m.rem(48) 0;
+  }
+
+  &__logo {
+    width: 48%;
+    padding-right: 8%;
+    text-align: right;
+
+    a {
+      color: v.$colorTheme;
+    }
+  }
+
+  &__info {
+    width: 48%;
+
+    p {
+      font-size: m.rem(14);
+    }
+
+  }
+
+  &__logo {
+
+  }
+
+  &__nav {
+
+    &__list {
+
+      &__item {
+
+      }
+
+      &--sub {
+
+        &__item {
+
+        }
+      }
+
+    }
+
+  }
+
+  &__copy {
+
+  }
+
+  @include m.mq-max(v.$breakpoint-xs) {
+
+    &__top {
+      padding: m.rem(40) 0;
+    }
+
+    &__bottom {
+      padding: 0 0 m.vw(40) 0;
+    }
+  
+
+    &__logo {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: m.vw(30);
+      text-align: center;
+    }
+  
+    &__info {
+      width: 100%;
+
+      p {
+        font-size: m.vw(14);
+      }
+    }
+  
+  }
+}

@@ -1,0 +1,205 @@
+//index.htmlへ出力する
+@charset "utf-8";
+@use './foundation/vars' as v;
+@use './foundation/mixin' as m;
+
+/* index
+--------------------------*/
+
+/* concept
+--------------------------*/
+.concept {
+    &__box {
+        @include m.flexWrap;
+        align-items: center;
+
+        .p-box__left {
+            order: 2;
+            padding-left: 5%;
+
+
+            @include m.mq-max(v.$breakpoint-xs) {
+                order: 1;
+                padding-left: 0;
+            }
+
+            .c-heading {
+                @include m.mq-max(v.$breakpoint-xs) {
+                    text-align: center;
+                }
+            }
+        }
+
+
+        .p-box__right {
+            order: 1;
+
+            @include m.mq-max(v.$breakpoint-xs) {
+                order: 2;
+                margin-top: m.vw(30);
+            }
+
+            img {
+                box-shadow: 8px 8px 12px #bbb;
+            }
+
+        }
+    }
+
+    @include m.mq-max(v.$breakpoint-xs) {
+        .c-heading {
+            text-align: center;
+        }
+
+        .p-box__left {
+            order: 1;
+            padding-left: 0;
+        }
+        .p-box__right {
+            order: 2;
+            margin-top: m.vw(30);
+
+            img {
+                box-shadow: 8px 8px 12px #bbb;
+            }
+
+        }
+
+    }
+}
+
+/* works
+--------------------------*/
+.works {
+    &__heading {
+        text-align: center;
+    }
+
+    &__item {
+
+        .p-card__img {
+            width: 70%;
+            margin: auto;
+        }
+    }
+}
+
+/* cv
+--------------------------*/
+.cv {
+    padding: m.rem(40) 0;
+    margin-bottom: m.rem(40);
+
+    @include m.mq-max(v.$breakpoint-xs) {
+        padding: m.vw(20) 0;
+        margin-bottom: m.vw(20);
+    }
+}
+
+/* news
+--------------------------*/
+.news {
+    position: relative;
+
+    &::before {
+        @include m.before;
+        top: -4vw;
+        left: auto;
+        right: 3vw;
+        width: m.rem(180);
+        height: m.rem(148);
+        background: url(../images/top/icon-flower-top.png) center center / 100% no-repeat;
+    }
+
+    &::after {
+        @include m.after;
+        top: auto;
+        left: 3vw;
+        bottom: -7vw;
+        width: m.rem(180);
+        height: m.rem(148);
+        background: url(../images/top/icon-flower-bottom.png) center center / 100% no-repeat;
+    }
+
+    .p-box {
+        @include m.flexWrap;
+
+        &__left {
+            width: 30%;
+        }
+
+        &__right {
+            width: 70%;
+        }
+    }
+
+    @include m.mq-max(v.$breakpoint-xs) {
+        &::before {
+            top: -8vw;
+            width: m.vw(100);
+            height: m.vw(83);
+        }
+
+        &::after {
+            bottom: -12vw;
+            width: m.vw(100);
+            height: m.vw(83);
+        }
+
+        .c-heading {
+            text-align: center;
+        }
+
+        .p-box {
+            @include m.flexWrap;
+
+            &__left {
+                width: 100%;
+
+            }
+
+            &__right {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+/* access
+--------------------------*/
+.access {
+    .c-heading {
+        text-align: center;
+    }
+
+}
+
+/* contact
+--------------------------*/
+.contact {
+    background: url(../images/top/bg-contact.jpg) top / cover no-repeat;
+    position: relative;
+    z-index: 0;
+    color: v.$colorTheme;
+
+    &::before {
+        @include m.before;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(42, 42, 42, 0.8);
+    }
+
+    .c-heading {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}

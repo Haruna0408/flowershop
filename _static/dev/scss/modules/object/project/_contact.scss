@@ -1,0 +1,116 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+/* contact
+----------------------------------------------------------------- */
+.p-contact {
+
+  &__slide {
+
+    &__wrap {
+
+    }
+    &__item {
+
+    }
+  }
+
+  &__thanks {
+
+    &__section {
+
+    }
+
+    &__media {
+
+      &__inner {
+        &.js-rellax {
+
+        }
+      }
+
+      &__content {
+
+      }
+
+      &__title {
+
+      }
+      &__text {
+
+      }
+      &__btn {
+
+      }
+
+      &__image {
+
+      }
+
+      &__link {
+
+      }
+
+    }
+
+
+  }
+
+  &__list {
+    @include m.flexWrap;
+
+
+  }
+
+  &__item {
+    width: 31%;
+    margin-top: m.rem(50);
+
+    &:not(:last-child) {
+      margin-right: 2%;
+    }
+
+    a {
+      @include m.mincho;
+      font-weight: 600;
+      position: relative;
+
+      &::after {
+        @include m.after;
+        left: auto;
+        right: m.rem(15);
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        width: m.rem(10);
+        height: m.rem(10);
+        border-top: 2px solid v.$colorTheme;
+        border-right: 2px solid v.$colorTheme;
+      }
+    }
+  }
+
+  @include m.mq-max(v.$breakpoint-xs) {
+    &__item {
+      width: 100%;
+      margin-top: m.vw(30);
+
+      &:not(:last-child) {
+        margin-right: 2%;
+      }
+
+      a {
+        @include m.mincho;
+        @include m.fz_vw(16);
+
+        &::after {
+          right: m.vw(20);
+          width: m.vw(10);
+          height: m.vw(10);
+        }
+      }
+    }
+
+  }
+
+}

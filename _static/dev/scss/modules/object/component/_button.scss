@@ -1,0 +1,96 @@
+@charset "utf-8";
+@use '../../foundation/vars' as v;
+@use '../../foundation/mixin' as m;
+
+
+/* button
+-------------------------------------------*/
+.c-button {
+    &__wrap {
+        width: 30%;
+        margin: m.rem(40) auto;
+    }
+
+    &__base {
+        width: 100%;
+        max-width: 100%;
+        display: inline-block;
+        padding: m.rem(16);
+        text-align: center;
+        font-size: m.rem(16);
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        font-family: 'Montserrat', sans-serif;
+        // background: linear-gradient(90deg, rgba(243,95,0,1) 0%, rgba(243,152,0,1) 65%);
+        color: #fff;
+
+        &::after {
+            @include m.after;
+            width: m.rem(30);
+            height: m.rem(30);
+            border-right: 1px solid v.$colorBase;
+        }
+
+    }
+
+    &__radius {
+        @extend .c-button__base;
+        border-radius: 50px;
+
+        &--black {
+            @extend .c-button__base;
+            border-radius: 50px;
+            background-color: v.$colorBase;
+            color: v.$colorTheme;
+        }
+
+        &--white {
+            @extend .c-button__base;
+            border: 2px solid v.$colorTheme;
+            border-radius: 50px;
+            color: v.$colorTheme;
+        }
+    }
+
+    &__square {
+        @extend .c-button__base;
+    }
+
+    @include m.mq-max(v.$breakpoint-xs) {
+
+        &__wrap {
+            width: 80%;
+            margin: m.vw(20) auto;
+        }
+
+        &__base {
+            padding: m.vw(14);
+            font-size: m.vw(16);
+    
+            &::after {
+                @include m.after;
+                width: m.rem(30);
+                height: m.rem(30);
+                border-right: 1px solid v.$colorBase;
+            }
+    
+        }
+    
+        &__radius {
+            @extend .c-button__base;
+            border-radius: 50px;
+    
+            &--black {
+                @extend .c-button__base;
+                border-radius: 50px;
+                background-color: v.$colorBase;
+                color: v.$colorTheme;
+            }
+        }
+    
+        &__square {
+            @extend .c-button__base;
+        }
+    }
+
+}
