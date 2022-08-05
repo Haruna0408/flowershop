@@ -270,32 +270,17 @@ iframe {
     padding: 0 4%;
   }
 }
-.l-header__top {
-  display: flex;
-  align-items: center;
-  padding: rem(10) rem(20);
-}
-.l-header__bottom {
-  padding: 0 30px;
-  max-width: 1024px;
-  margin: auto;
-}
 @media screen and (max-width: 767px) {
+  .l-header {
+    height: 6rem;
+  }
   .l-header.js-header.is-active {
     background-color: #fff;
   }
   .l-header__inner {
     max-width: 100%;
     margin: 0 auto;
-    padding: rem(10) 2%;
-  }
-  .l-header__top {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 2%;
-  }
-  .l-header__bottom {
-    display: none;
+    padding: 2rem 2%;
   }
 }
 
@@ -1000,14 +985,19 @@ h2 {
     flex-wrap: wrap;
   }
   .p-card__item {
-    width: 100%;
+    width: 94%;
     max-width: 100%;
     min-height: inherit;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 3rem;
   }
+  .p-card__item:nth-of-type(2n) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .p-card__item:nth-of-type(3n) {
-    margin-right: 0;
+    margin-right: auto;
   }
   .p-card__img {
     padding-top: 75%;
@@ -1022,8 +1012,8 @@ h2 {
     object-fit: contain;
   }
   .p-card__title {
-    font-size: 23px;
-    font-size: 6.1333333333vw;
+    font-size: 20px;
+    font-size: 5.3333333333vw;
     letter-spacing: 0.5em;
     line-height: 2;
     margin-bottom: 4.8vw;
@@ -1268,7 +1258,7 @@ h2 {
     position: fixed;
     width: 32px;
     height: 32px;
-    top: 25px;
+    top: 2rem;
     right: 4%;
     cursor: pointer;
     border: none;
@@ -1797,6 +1787,7 @@ h2 {
 @media screen and (max-width: 767px) {
   .p-nav__area {
     display: none;
+    transition: all 0.3s ease;
   }
   .p-nav__area.is-active {
     display: block;
@@ -1814,7 +1805,10 @@ h2 {
   .p-nav__area.is-active.js-drower {
     transform: translateX(0);
     z-index: 100;
-    top: 68px;
+    top: 6rem;
+  }
+  .p-nav__area.js-drower {
+    transition: all 0.3s ease;
   }
   .p-nav__list {
     display: flex;

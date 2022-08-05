@@ -2,7 +2,7 @@ $(window).on('load', function () {
     $('.js-garellySlider').slick({
         autoplay: true,
         autoplaySpeed: 0,
-        speed: 20000,
+        speed: 8000,
         infinite: true,
         pauseOnHover: false,
         cssEase: 'linear',

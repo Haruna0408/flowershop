@@ -120,14 +120,20 @@
         }
 
         &__item {
-            width: 100%;//3つ並びの時
+            width: 94%;//3つ並びの時
             max-width: 100%;
             min-height: inherit;
-            margin-right: 2%;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: m.rem(30);
 
+            &:nth-of-type(2n) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
             &:nth-of-type(3n) {
-                margin-right: 0;
+                margin-right: auto;
             }
         }
 
@@ -171,7 +177,7 @@
         // }
 
         &__title {
-            @include m.fz_vw(23);
+            @include m.fz_vw(20);
             letter-spacing: .5em;
             line-height: 2;
             margin-bottom: m.vw(18);
