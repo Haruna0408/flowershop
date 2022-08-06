@@ -122,8 +122,9 @@
                 <div class="p-mainvisual__area">
                     <div class="p-mainvisual__wrap">
                         <picture>
-                            <source srcset="./assets/images/top/mv.jpg">
-                            <img loading="lazy" src="./assets/images/top/mv.jpg" alt="生活に彩りをお届けします。">
+                            <source loading="lazy" media="(min-width: 769px)" srcset="./assets/images/top/mv_pc.jpg" alt="生活に彩りをお届けします。">
+                            <source loading="lazy" media="(max-width: 768px)" srcset="./assets/images/top/mv_sp.jpg" alt="生活に彩りをお届けします。">
+                            <img loading="lazy" srcset="./assets/images/top/mv_pc.jpg" alt="生活に彩りをお届けします。">
                         </picture>
                         <div class="p-mainvisual__text">
                             <p class="p-mainvisual__text__one">XXXXX</p>
@@ -176,10 +177,13 @@
 
                         <li class="p-card__item works__item">
                             <div class="p-card__item__in">
-                                <h3 class="c-title p-card__title">GIFT</h3>
+                                <h3 class="c-title p-card__title">
+                                    <span>GIFT</span>
+                                    ギフト
+                                </h3>
                                 <div class="p-card__body">
                                     <p class="c-lead p-card__lead">
-                                        母の日や父の日などお世話になっている方々へのプレゼントにも最適なお花を、季節ごとに用意しております。
+                                        母の日や父の日などお世話になっている方々へのプレゼントに最適なお花を、季節ごとに用意しております。
                                     </p>
                                 </div>
                                 <figure class="p-card__img">
@@ -190,10 +194,13 @@
 
                         <li class="p-card__item works__item">
                             <div class="p-card__item__in">
-                                <h3 class="c-title p-card__title">EVENT</h3>
+                                <h3 class="c-title p-card__title">
+                                    <span>EVENT</span>
+                                    イベント
+                                </h3>
                                 <div class="p-card__body">
                                     <p class="c-lead p-card__lead">
-                                        冠婚葬祭用のお花をご用意しています。行事に合わせておご提案いたしますので、お気軽にご相談ください。
+                                        冠婚葬祭用のお花も取り揃えています。行事に合わせてご提案いたしますので、お気軽にご相談ください。
                                     </p>
                                 </div>
                                 <figure class="p-card__img">
@@ -204,7 +211,10 @@
 
                         <li class="p-card__item works__item">
                             <div class="p-card__item__in">
-                                <h3 class="c-title p-card__title">MY SELF</h3>
+                                <h3 class="c-title p-card__title">
+                                    <span>MY SELF</span>
+                                    自分へ
+                                </h3>
                                 <div class="p-card__body">
                                     <p class="c-lead p-card__lead">
                                         ご家庭で飾るお花としてもぜひお選びください。インスタグラムからもご注文可能です。

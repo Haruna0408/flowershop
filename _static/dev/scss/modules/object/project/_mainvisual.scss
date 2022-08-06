@@ -61,6 +61,7 @@
             writing-mode: vertical-lr;
             top: m.rem(80);
             right: 0;
+            text-shadow: 0 0 8px #bbb;
         }
 
         &__two {
@@ -69,6 +70,7 @@
             writing-mode: vertical-lr;
             bottom: m.rem(180);
             left: m.rem(30);
+            text-shadow: 0 0 8px #bbb;
         }
 
         &__three {
@@ -77,6 +79,7 @@
             writing-mode: vertical-lr;
             bottom: m.rem(80);
             left: 0;
+            text-shadow: 0 0 8px #bbb;
         }
     }
 

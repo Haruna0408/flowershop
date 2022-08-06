@@ -74,23 +74,32 @@
     // }
 
     &__title {
-        font-size: m.rem(32);
+        font-size: m.rem(13);
         font-weight: 500;
         @include m.mincho;
-        letter-spacing: 0.05em;
-        line-height: 2;
+        letter-spacing: 0.01em;
+        line-height: 1.3;
         margin-bottom: m.rem(16);
+        color: v.$colorSub;
+
+        span {
+            display: block;
+            font-size: m.rem(32);
+            font-weight: 500;
+            color: v.$colorBase;
+            letter-spacing: 0.05em;
+            line-height: 1.5;
+        }
     }
 
     &__lead {
         font-size: m.rem(16);
         letter-spacing: .05em;
         line-height: 2;
-        // color: $;
     }
 
     &__button {
-    margin-top: auto;
+        margin-top: auto;
         &:hover {
             opacity: .6;
         }
@@ -135,6 +144,10 @@
             &:nth-of-type(3n) {
                 margin-right: auto;
             }
+
+            &__in {
+                padding: 6% 4%;
+            }
         }
 
         //全体をリンクで覆う時
@@ -177,10 +190,12 @@
         // }
 
         &__title {
-            @include m.fz_vw(20);
-            letter-spacing: .5em;
-            line-height: 2;
-            margin-bottom: m.vw(18);
+            font-size: m.rem(13);
+            margin-bottom: m.vw(16);
+
+            span {
+                @include m.fz_vw(18);
+            }
         }
 
         &__lead {

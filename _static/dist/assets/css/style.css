@@ -260,14 +260,14 @@ iframe {
   .l-header__inner {
     width: 96%;
     max-width: 96%;
-    padding: 0 2%;
+    padding: 0 4%;
   }
 }
 @media screen and (max-width: 767px) {
   .l-header__inner {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 4%;
+    width: 98%;
+    max-width: 98%;
+    padding: 0 2%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -280,7 +280,7 @@ iframe {
   .l-header__inner {
     max-width: 100%;
     margin: 0 auto;
-    padding: 2rem 2%;
+    padding: 4%;
   }
 }
 
@@ -343,14 +343,14 @@ iframe {
   .l-inner {
     width: 96%;
     max-width: 96%;
-    padding: 0 2%;
+    padding: 0 4%;
   }
 }
 @media screen and (max-width: 767px) {
   .l-inner {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 4%;
+    width: 98%;
+    max-width: 98%;
+    padding: 0 2%;
   }
 }
 .l-inner__min {
@@ -926,7 +926,7 @@ h2 {
   flex-direction: column;
   padding: 1.6rem;
   box-shadow: 6px 6px 6px 6px rgba(250, 249, 247, 0.1);
-  background-color: #E0E6F2;
+  background-color: #E6E9E2;
 }
 .p-card__item:nth-of-type(3n) {
   margin-right: 0;
@@ -948,12 +948,21 @@ h2 {
   object-fit: contain;
 }
 .p-card__title {
-  font-size: 3.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   font-family: YuMincho, "Yu Mincho", serif;
-  letter-spacing: 0.05em;
-  line-height: 2;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
   margin-bottom: 1.6rem;
+  color: #51493b;
+}
+.p-card__title span {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
 }
 .p-card__lead {
   font-size: 1.6rem;
@@ -999,6 +1008,9 @@ h2 {
   .p-card__item:nth-of-type(3n) {
     margin-right: auto;
   }
+  .p-card__item__in {
+    padding: 6% 4%;
+  }
   .p-card__img {
     padding-top: 75%;
     position: relative;
@@ -1012,11 +1024,12 @@ h2 {
     object-fit: contain;
   }
   .p-card__title {
-    font-size: 20px;
-    font-size: 5.3333333333vw;
-    letter-spacing: 0.5em;
-    line-height: 2;
-    margin-bottom: 4.8vw;
+    font-size: 1.3rem;
+    margin-bottom: 4.2666666667vw;
+  }
+  .p-card__title span {
+    font-size: 18px;
+    font-size: 4.8vw;
   }
   .p-card__lead {
     font-size: 14px;
@@ -1486,6 +1499,7 @@ h2 {
   writing-mode: vertical-lr;
   top: 8rem;
   right: 0;
+  text-shadow: 0 0 8px #bbb;
 }
 .p-mainvisual__text__two {
   position: absolute;
@@ -1493,6 +1507,7 @@ h2 {
   writing-mode: vertical-lr;
   bottom: 18rem;
   left: 3rem;
+  text-shadow: 0 0 8px #bbb;
 }
 .p-mainvisual__text__three {
   position: absolute;
@@ -1500,6 +1515,7 @@ h2 {
   writing-mode: vertical-lr;
   bottom: 8rem;
   left: 0;
+  text-shadow: 0 0 8px #bbb;
 }
 @media screen and (max-width: 1025px) {
   .p-mainvisual__text {
@@ -2859,7 +2875,7 @@ h2 {
   background-color: #f9f9f9;
 }
 .u-bg__color--blue {
-  background-color: #D9E0EF;
+  background-color: #E6E9E2;
 }
 
 /* back ground parallax
